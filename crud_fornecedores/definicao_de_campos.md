@@ -1,0 +1,7 @@
+ - Id;
+ - Nome Fantasia;
+ - Razão Social;
+ - CNPJ;
+ - Inscrição Estadual;
+ - Ramo de atividade;
+ - CNAE;
