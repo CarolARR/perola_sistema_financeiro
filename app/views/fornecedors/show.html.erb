@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome Fantasia:</strong>
+  <%= @fornecedor.nomeFantasia %>
+</p>
+
+<p>
+  <strong>Razão Social:</strong>
+  <%= @fornecedor.razaoSocial %>
+</p>
+
+<p>
+  <strong>Cnpj:</strong>
+  <%= @fornecedor.CNPJ %>
+</p>
+
+<p>
+  <strong>Inscrição Estadual:</strong>
+  <%= @fornecedor.inscricaoEstadual %>
+</p>
+
+<p>
+  <strong>Ramo Atividade:</strong>
+  <%= @fornecedor.ramoAtividade %>
+</p>
+
+<p>
+  <strong>Cnae:</strong>
+  <%= @fornecedor.CNAE %>
+</p>
+
+<%= link_to 'Edit', edit_fornecedor_path(@fornecedor) %> |
+<%= link_to 'Back', fornecedors_path %>

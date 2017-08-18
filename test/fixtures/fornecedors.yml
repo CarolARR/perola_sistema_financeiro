@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nomeFantasia: MyString
+  razaoSocial: MyString
+  CNPJ: MyString
+  inscricaoEstadual: MyString
+  ramoAtividade: MyString
+  CNAE: MyString
+
+two:
+  nomeFantasia: MyString
+  razaoSocial: MyString
+  CNPJ: MyString
+  inscricaoEstadual: MyString
+  ramoAtividade: MyString
+  CNAE: MyString

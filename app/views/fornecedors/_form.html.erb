@@ -1,0 +1,47 @@
+<%= form_with(model: fornecedor, local: true) do |form| %>
+  <% if fornecedor.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(fornecedor.errors.count, "error") %> prohibited this fornecedor from being saved:</h2>
+
+      <ul>
+      <% fornecedor.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nomeFantasia %>
+    <%= form.text_field :nomeFantasia, id: :fornecedor_nomeFantasia %>
+  </div>
+
+  <div class="field">
+    <%= form.label :razaoSocial %>
+    <%= form.text_field :razaoSocial, id: :fornecedor_razaoSocial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CNPJ %>
+    <%= form.text_field :CNPJ, id: :fornecedor_CNPJ %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inscricaoEstadual %>
+    <%= form.text_field :inscricaoEstadual, id: :fornecedor_inscricaoEstadual %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ramoAtividade %>
+    <%= form.text_field :ramoAtividade, id: :fornecedor_ramoAtividade %>
+  </div>
+
+  <div class="field">
+    <%= form.label :CNAE %>
+    <%= form.text_field :CNAE, id: :fornecedor_CNAE %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
