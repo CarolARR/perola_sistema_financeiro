@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Emissor:</strong>
+  <%= @contas_a_receber.emissor %>
+</p>
+
+<p>
+  <strong>Dataemissao:</strong>
+  <%= @contas_a_receber.dataEmissao %>
+</p>
+
+<p>
+  <strong>Datapagamento:</strong>
+  <%= @contas_a_receber.dataPagamento %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @contas_a_receber.valor %>
+</p>
+
+<p>
+  <strong>Datarecebimento:</strong>
+  <%= @contas_a_receber.dataRecebimento %>
+</p>
+
+<p>
+  <strong>Valormulta:</strong>
+  <%= @contas_a_receber.valorMulta %>
+</p>
+
+<p>
+  <strong>Valortotal:</strong>
+  <%= @contas_a_receber.valorTotal %>
+</p>
+
+<%= link_to 'Edit', edit_contas_a_receber_path(@contas_a_receber) %> |
+<%= link_to 'Back', contas_a_recebers_path %>

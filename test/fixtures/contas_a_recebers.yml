@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emissor: MyString
+  dataEmissao: 2017-08-21 13:04:34
+  dataPagamento: 2017-08-21 13:04:34
+  valor: 1.5
+  dataRecebimento: 2017-08-21 13:04:34
+  valorMulta: 1.5
+  valorTotal: 1.5
+
+two:
+  emissor: MyString
+  dataEmissao: 2017-08-21 13:04:34
+  dataPagamento: 2017-08-21 13:04:34
+  valor: 1.5
+  dataRecebimento: 2017-08-21 13:04:34
+  valorMulta: 1.5
+  valorTotal: 1.5

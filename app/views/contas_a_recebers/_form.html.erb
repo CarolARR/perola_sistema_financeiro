@@ -1,0 +1,52 @@
+<%= form_with(model: contas_a_receber, local: true) do |form| %>
+  <% if contas_a_receber.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contas_a_receber.errors.count, "error") %> prohibited this contas_a_receber from being saved:</h2>
+
+      <ul>
+      <% contas_a_receber.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :emissor %>
+    <%= form.text_field :emissor, id: :contas_a_receber_emissor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataEmissao %>
+    <%= form.datetime_select :dataEmissao, id: :contas_a_receber_dataEmissao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataPagamento %>
+    <%= form.datetime_select :dataPagamento, id: :contas_a_receber_dataPagamento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor %>
+    <%= form.text_field :valor, id: :contas_a_receber_valor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataRecebimento %>
+    <%= form.datetime_select :dataRecebimento, id: :contas_a_receber_dataRecebimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valorMulta %>
+    <%= form.text_field :valorMulta, id: :contas_a_receber_valorMulta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valorTotal %>
+    <%= form.text_field :valorTotal, id: :contas_a_receber_valorTotal %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

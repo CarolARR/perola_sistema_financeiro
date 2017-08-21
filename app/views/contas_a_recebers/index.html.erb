@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Contas A Recebers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Emissor</th>
+      <th>Dataemissao</th>
+      <th>Datapagamento</th>
+      <th>Valor</th>
+      <th>Datarecebimento</th>
+      <th>Valormulta</th>
+      <th>Valortotal</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contas_a_recebers.each do |contas_a_receber| %>
+      <tr>
+        <td><%= contas_a_receber.emissor %></td>
+        <td><%= contas_a_receber.dataEmissao %></td>
+        <td><%= contas_a_receber.dataPagamento %></td>
+        <td><%= contas_a_receber.valor %></td>
+        <td><%= contas_a_receber.dataRecebimento %></td>
+        <td><%= contas_a_receber.valorMulta %></td>
+        <td><%= contas_a_receber.valorTotal %></td>
+        <td><%= link_to 'Show', contas_a_receber %></td>
+        <td><%= link_to 'Edit', edit_contas_a_receber_path(contas_a_receber) %></td>
+        <td><%= link_to 'Destroy', contas_a_receber, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Contas A Receber', new_contas_a_receber_path %>
