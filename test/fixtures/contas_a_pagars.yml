@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  emissor: 
+  dataEmissao: 2017-08-21 11:57:23
+  valor: 1.5
+  descricaoConta: 
+  valorMulta: 1.5
+  PermitePagarAposVencimento: false
+  codigoBarras: MyString
+  anexoConta: MyString
+
+two:
+  emissor: 
+  dataEmissao: 2017-08-21 11:57:23
+  valor: 1.5
+  descricaoConta: 
+  valorMulta: 1.5
+  PermitePagarAposVencimento: false
+  codigoBarras: MyString
+  anexoConta: MyString

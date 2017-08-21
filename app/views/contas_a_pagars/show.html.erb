@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Emissor:</strong>
+  <%= @contas_a_pagar.emissor %>
+</p>
+
+<p>
+  <strong>Dataemissao:</strong>
+  <%= @contas_a_pagar.dataEmissao %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @contas_a_pagar.valor %>
+</p>
+
+<p>
+  <strong>Descricaoconta:</strong>
+  <%= @contas_a_pagar.descricaoConta %>
+</p>
+
+<p>
+  <strong>Valormulta:</strong>
+  <%= @contas_a_pagar.valorMulta %>
+</p>
+
+<p>
+  <strong>Permitepagaraposvencimento:</strong>
+  <%= @contas_a_pagar.PermitePagarAposVencimento %>
+</p>
+
+<p>
+  <strong>Codigobarras:</strong>
+  <%= @contas_a_pagar.codigoBarras %>
+</p>
+
+<p>
+  <strong>Anexoconta:</strong>
+  <%= @contas_a_pagar.anexoConta %>
+</p>
+
+<%= link_to 'Edit', edit_contas_a_pagar_path(@contas_a_pagar) %> |
+<%= link_to 'Back', contas_a_pagars_path %>

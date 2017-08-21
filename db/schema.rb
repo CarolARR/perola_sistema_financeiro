@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170821141748) do
+ActiveRecord::Schema.define(version: 20170821145723) do
+
+  create_table "contas_a_pagars", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "emissor"
+    t.datetime "dataEmissao"
+    t.float "valor", limit: 24
+    t.string "descricaoConta"
+    t.float "valorMulta", limit: 24
+    t.boolean "PermitePagarAposVencimento"
+    t.string "codigoBarras"
+    t.string "anexoConta"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "fornecedors", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "nomeFantasia"
