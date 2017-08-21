@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170821145723) do
+ActiveRecord::Schema.define(version: 20170821160434) do
 
   create_table "contas_a_pagars", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string "emissor"
@@ -21,6 +21,18 @@ ActiveRecord::Schema.define(version: 20170821145723) do
     t.boolean "PermitePagarAposVencimento"
     t.string "codigoBarras"
     t.string "anexoConta"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "contas_a_recebers", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string "emissor"
+    t.datetime "dataEmissao"
+    t.datetime "dataPagamento"
+    t.float "valor", limit: 24
+    t.datetime "dataRecebimento"
+    t.float "valorMulta", limit: 24
+    t.float "valorTotal", limit: 24
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
