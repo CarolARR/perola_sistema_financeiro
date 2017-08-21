@@ -7,3 +7,4 @@ Definição de Campos:
   - Valor;
   - Data de recebimento;
   - Valor multa em caso de atraso;
+  - Valor total recebido
