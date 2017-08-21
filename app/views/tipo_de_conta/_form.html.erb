@@ -1,0 +1,22 @@
+<%= form_with(model: tipo_de_contum, local: true) do |form| %>
+  <% if tipo_de_contum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tipo_de_contum.errors.count, "error") %> prohibited this tipo_de_contum from being saved:</h2>
+
+      <ul>
+      <% tipo_de_contum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :tipoDeConta %>
+    <%= form.text_field :tipoDeConta, id: :tipo_de_contum_tipoDeConta %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

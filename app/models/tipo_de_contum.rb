@@ -1,0 +1,2 @@
+class TipoDeContum < ApplicationRecord
+end
