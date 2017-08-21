@@ -1,0 +1,57 @@
+<%= form_with(model: contas_a_pagar, local: true) do |form| %>
+  <% if contas_a_pagar.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(contas_a_pagar.errors.count, "error") %> prohibited this contas_a_pagar from being saved:</h2>
+
+      <ul>
+      <% contas_a_pagar.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :emissor %>
+    <%= form.text_field :emissor, id: :contas_a_pagar_emissor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dataEmissao %>
+    <%= form.datetime_select :dataEmissao, id: :contas_a_pagar_dataEmissao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor %>
+    <%= form.text_field :valor, id: :contas_a_pagar_valor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descricaoConta %>
+    <%= form.text_field :descricaoConta, id: :contas_a_pagar_descricaoConta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valorMulta %>
+    <%= form.text_field :valorMulta, id: :contas_a_pagar_valorMulta %>
+  </div>
+
+  <div class="field">
+    <%= form.label :PermitePagarAposVencimento %>
+    <%= form.check_box :PermitePagarAposVencimento, id: :contas_a_pagar_PermitePagarAposVencimento %>
+  </div>
+
+  <div class="field">
+    <%= form.label :codigoBarras %>
+    <%= form.text_field :codigoBarras, id: :contas_a_pagar_codigoBarras %>
+  </div>
+
+  <div class="field">
+    <%= form.label :anexoConta %>
+    <%= form.text_field :anexoConta, id: :contas_a_pagar_anexoConta %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
