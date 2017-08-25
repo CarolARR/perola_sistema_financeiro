@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'home/index' 
+  root 'home#index'
   resources :usuarios
   resources :contas_a_recebers
   resources :contas_a_pagars
